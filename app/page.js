@@ -56,14 +56,37 @@
 // export default HomePage;
 
 
-import React from 'react'
 
+import Canva from "@/components/Canvas";
+
+// Main component
 const page = () => {
   return (
-    <div className='w-full h-screen bg-gradient-to-b from-[#000d52] to-[#fff]'>
-       
-    </div>
-  )
-}
+    <div className='w-full'>
+      <div className="
+        flex
+        justify-between
+        items-center
+        px-8
+        py-4
+        shadow-md
+        text-black
+      " >
+        NAVBAR
+      </div>
+      <div className="flex">
+        <div className="w-1/2">
+          <div className="p-8">
+            <h2 className="text-4xl font-bold text-black">Content</h2>
+          </div>
+        </div>
 
-export default page
+        <div className="w-1/2">
+          <Canva />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default page;
