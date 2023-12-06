@@ -13,9 +13,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+      <link rel="icon" href="/logo.png" />
+      </head>
       <body className={inter.className}>
         <ClerkProvider>
-          <main className="dark w-full h-screen text-foreground bg-background">
+          <main className="dark w-full text-foreground bg-background">
             <Providers>
               {children}
             </Providers>
