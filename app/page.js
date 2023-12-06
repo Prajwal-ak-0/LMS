@@ -1,12 +1,15 @@
 "use client"
 
 import Nav from "@/components/Navbar";
+import { UserButton } from "@clerk/nextjs";
 
 // Main component
 const page = () => {
   return (
     <>
-      <Nav/>
+      <div>
+        <UserButton afterSignOutUrl="/" />
+      </div>
     </>
   );
 };
