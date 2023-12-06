@@ -1,10 +1,9 @@
-import React from "react";
-import {Button} from "@nextui-org/react";
-
-export default function App() {
+import { UserButton } from "@clerk/nextjs";
+ 
+export default function Home() {
   return (
-    <>
-      
-    </>
-  );
+    <div>
+      <UserButton afterSignOutUrl="/"/>
+    </div>
+  )
 }
