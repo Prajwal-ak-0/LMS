@@ -1,10 +1,13 @@
+"use client"
+
 import { FaBookReader } from "react-icons/fa";
+import {NextUIProvider} from '@nextui-org/react';
 
 const AuthLayout = ({
     children
 }) => {
     return (
-        <div>
+        <NextUIProvider>
             <div className=" items-center justify-center flex py-4 sm:py-12 px-6 md:px-10 h-16 shadow-md">
                 <FaBookReader size={36} />
                 <p className="hidden text-xl pt-2 sm:block pl-2 font-bold text-inherit">EduHub</p>
@@ -17,7 +20,7 @@ const AuthLayout = ({
                     {children}
                 </div>
             </div>
-        </div>
+        </NextUIProvider>
     );
 }
 
